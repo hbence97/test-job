@@ -46,10 +46,10 @@
           id="requestNewFeatures" name="requestNewFeatures" placeholder="e.g. mobile app developer" />
         <br />
         <div class="new-features__popup-form-container--buttons">
-          <button @click="cancelHandler" class="new-features__popup-form--cancel-button">
+          <button @click="cancelHandler" class="new-features__popup-form--cancel-button" type="button">
             Cancel
           </button>
-          <button @click="sendHandler" :class="[inputMessage ? 'validInput' : 'invalidInput']"
+          <button @click="sendHandler" :class="[inputMessage ? 'validInput' : 'invalidInput']" type="button"
             class="new-features__popup-form--submit-button">
             Send
           </button>
