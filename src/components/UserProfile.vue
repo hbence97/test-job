@@ -1,13 +1,10 @@
 <template>
   <div id="user-profile">
-    <img src="../assets/tamas.png" id="user-profile__image" alt="user profile">
+    <img src="../assets/tamas.png" id="user-profile__image" alt="user profile" />
   </div>
 </template>
 
-<script>
-export default {
-}
-</script>
+<script></script>
 
 <style>
 #user-profile {

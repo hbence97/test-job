@@ -1,20 +1,18 @@
 <template>
   <div id="inbox-page__container">
-    <div id="inbox-page">
-    </div>
+    <div id="inbox-page"></div>
     <page-header id="inbox-page__header" />
   </div>
 </template>
 
 <script>
-export default {
-}
+export default {};
 </script>
 
 <style>
 #inbox-page__container {
   position: relative;
-  background: #E9EFF2;
+  background: #e9eff2;
   width: 100%;
   height: 100vh;
   overflow: hidden;

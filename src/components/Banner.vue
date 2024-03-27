@@ -1,11 +1,14 @@
 <template>
   <div v-if="showBanner" id="banner__container">
     <div id="banner__items">
-      <img class="banner__image" src="../assets/banner_image.png" alt="Banner image">
+      <img class="banner__image" src="../assets/banner_image.png" alt="Banner image" />
       <h2 class="banner__h2">New features available!</h2>
-      <span class="banner__span">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
-      <button class="banner__button" @click="viewNewFeatures">View new features</button>
-      <img class="banner__x" @click="closeBanner" src="../assets/banner_x.png" alt="Banner close button">
+      <span class="banner__span">Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry.</span>
+      <button class="banner__button" @click="viewNewFeatures">
+        View new features
+      </button>
+      <img class="banner__x" @click="closeBanner" src="../assets/banner_x.png" alt="Banner close button" />
     </div>
   </div>
 </template>
@@ -15,13 +18,14 @@ export default {
   data() {
     return {
       showBanner: false,
-      newFeaturesClicked: false
-    }
+      newFeaturesClicked: false,
+    };
   },
+  emits: ["new-feature-clicked"],
   mounted() {
     setTimeout(() => {
       this.showBanner = true;
-    }, "1000")
+    }, "10000");
   },
   methods: {
     viewNewFeatures() {
@@ -30,19 +34,20 @@ export default {
 
       this.$emit("new-feature-clicked", this.newFeaturesClicked);
     },
-
     closeBanner() {
       this.showBanner = false;
-    }
+    },
   },
-}
+};
 </script>
 
 <style scoped>
 #banner__container {
   position: absolute;
   top: 0;
-  background: radial-gradient(ellipse at 20% 0%, rgba(38, 209, 176, 1) 0%, rgba(38, 110, 209, 1) 40%);
+  background: radial-gradient(ellipse at 20% 0%,
+      rgba(38, 209, 176, 1) 0%,
+      rgba(38, 110, 209, 1) 40%);
   width: 100%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -83,7 +88,7 @@ export default {
 .banner__span {
   grid-area: banner__span;
   margin-top: 1rem;
-  color: #E9EFF2;
+  color: #e9eff2;
   font-weight: 200;
 }
 
