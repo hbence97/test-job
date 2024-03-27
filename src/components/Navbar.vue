@@ -56,8 +56,7 @@
   </nav>
 </template>
 
-<script>
-</script>
+<script></script>
 
 <style>
 nav {
@@ -77,7 +76,7 @@ li {
 ul li a {
   text-decoration: none;
   font-size: 16px;
-  color: #6C7880;
+  color: #6c7880;
 }
 
 ul li i,
@@ -89,7 +88,7 @@ ul li a {
 .navbar__item-messages,
 .navbar__item-tools,
 .navbar__item-settings {
-  color: #1B1B1F;
+  color: #1b1b1f;
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 0.3rem;
@@ -110,7 +109,7 @@ ul li a {
 
 .navbar__item-inbox--text {
   font-weight: bold;
-  color: #3D22CF;
+  color: #3d22cf;
 }
 
 .navbar__item-outbound--icon {

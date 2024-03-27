@@ -8,8 +8,8 @@
 export default {
   data() {
     return {
-      showNewFeaturesPopup: false
-    }
+      showNewFeaturesPopup: false,
+    };
   },
   methods: {
     newFeatureClicked(isNewFeatureClicked) {
@@ -19,9 +19,9 @@ export default {
     },
     closeNewFeatures() {
       this.showNewFeaturesPopup = false;
-    }
-  }
-}
+    },
+  },
+};
 </script>
 
 <style>

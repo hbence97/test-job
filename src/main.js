@@ -1,12 +1,12 @@
-import { createApp } from "vue"
+import { createApp } from "vue";
 
-import App from "./App.vue"
-import PageHeader from "./components/PageHeader.vue"
-import Navbar from "./components/Navbar.vue"
-import UserProfile from "./components/UserProfile.vue"
-import InboxPage from "./components/InboxPage.vue"
-import Banner from "./components/Banner.vue"
-import NewFeatures from "./components/NewFeatures.vue"
+import App from "./App.vue";
+import PageHeader from "./components/PageHeader.vue";
+import Navbar from "./components/Navbar.vue";
+import UserProfile from "./components/UserProfile.vue";
+import InboxPage from "./components/InboxPage.vue";
+import Banner from "./components/Banner.vue";
+import NewFeatures from "./components/NewFeatures.vue";
 
 const app = createApp(App);
 

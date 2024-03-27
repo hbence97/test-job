@@ -1,15 +1,12 @@
 <template>
   <header>
-    <img id="header__logo" src="../assets/logo.png" alt="logo">
+    <img id="header__logo" src="../assets/logo.png" alt="logo" />
     <nav-bar />
     <user-profile />
   </header>
 </template>
 
-<script>
-export default {
-}
-</script>
+<script></script>
 
 <style>
 header {
@@ -17,7 +14,7 @@ header {
   flex-direction: column;
   height: 100vh;
   width: 13rem;
-  background: #E9EFF2;
+  background: #e9eff2;
 }
 
 #header__logo {
